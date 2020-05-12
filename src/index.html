@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="body">
+    <!-- <div id="root">not rendered</div> -->
+    <script src="./init.js" defer></script>
+    <script src="./renderItems.js" defer></script>
+    <script src="./login.js" defer></script>
+    <!-- div is a  this is a tag -->
+    <div class="wrapper">
+      <header>
+        <!-- h1 is an element -->
+        <h1>Sandbox JS Leadership</h1>
+        <!-- button as an element and id is an attribute -->
+        <button id="laserBtn">
+          Activate Lasers
+        </button>
+        <button>
+          <a href="eventsDragDrop.html">Jump To Drag and Drop</a>
+        </button>
+        <button>
+          <a href="printRecords.html">Jump To Programs View</a>
+        </button>
+      </header>
+      <article>
+        <h2>Dashboard</h2>
+        <div class="nested">
+          <aside>
+            <h3>General For Loop</h3>
+            <form name="selectForm">
+              <p>
+                <label for="musicTypes"
+                  >Choose some music types, then click the button below:</label
+                >
+                <select id="musicTypes" name="musicTypes" multiple="multiple">
+                  <option selected="selected">R&B</option>
+                  <option>Jazz</option>
+                  <option>Blues</option>
+                  <option>New Age</option>
+                  <option>Classical</option>
+                  <option>Opera</option>
+                </select>
+              </p>
+              <p>
+                <input id="btn" type="button" value="How many are selected?" />
+              </p>
+            </form>
+          </aside>
+          <aside>
+            <h3>Nested #2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id hic
+              iure saepe natus, suscipit repudiandae in aliquid quod tenetur
+              dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Id hic
+            </p>
+          </aside>
+          <aside>
+            <h3>Food Class/Constructor</h3>
+            <!-- classes for labeling things -->
+            <div class="foods">Click to Delete</div>
+          </aside>
+        </div>
+      </article>
+      <aside class="sidebar">
+        <h3>Log In</h3>
+        <form id="user-input">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </aside>
+    </div>
+  </body>
+</html>

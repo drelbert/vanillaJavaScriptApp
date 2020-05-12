@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox</title>
+    <link
+      href="./stylesFunctionPractice.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="body">
+    <!-- div is a tag -->
+    <!-- classes for labeling things -->
+    <div class="wrapper">
+      <header>
+        <!-- h1 is an element -->
+        <h1>Solo Flight Dev</h1>
+        <!-- button as an element and id is an attribute -->
+        <button>
+          <a href="index.html">Jump To Dashboard</a>
+        </button>
+        <!-- <button>
+          <a href="functionPractice.html">Jump To Functions View</a>
+        </button> -->
+      </header>
+      <article>
+        <h2>Vader Leader Program</h2>
+        <div class="nested">
+          <aside>
+            <h3>Current Enrollment</h3>
+            <div>
+              <ul id="enrolled"></ul>
+            </div>
+          </aside>
+
+          <aside>
+            <h3>Program Prep To Do</h3>
+            <div id="students"></div>
+            <form id="add-to-list">
+              <label for="list-item"
+                >What do you want to add to your list?</label
+              >
+              <input type="text" id="list-item" />
+              <button>Add to your list</button>
+            </form>
+
+            <div id="list"></div>
+          </aside>
+
+          <aside>
+            <h3>API Card</h3>
+            <div class="someAPIData"></div>
+          </aside>
+        </div>
+      </article>
+    </div>
+    <script src="./apiDemo.js" defer></script>
+    <script src="./printRecords.js" defer></script>
+    <script src="./arrayMap.js" defer></script>
+  </body>
+</html>

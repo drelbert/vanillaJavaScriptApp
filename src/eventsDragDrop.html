@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Program Board</title>
+    <link rel="stylesheet" href="./eventsDragDrop.css" />
+    <script src="./eventsDragDrop.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+
+    <header id="main-header">
+      <h1>Program Board</h1>
+    </header>
+    <section id="active-projects">
+      <header>
+        <h2>Active Programs</h2>
+      </header>
+      <ul class="dropzone">
+        <li
+          id="p1"
+          data-extra-info="Got lifetime access, but would be nice to finish it soon!"
+          class="card"
+          draggable="true"
+          ondragstart="event.dataTransfer.setData('text/plain',null)"
+        >
+          <h2>Vader Leadership</h2>
+          <p>Learn from the leader: Vader</p>
+          <button class="alt">More Info</button>
+        </li>
+
+        <li
+          id="p2"
+          data-extra-info="Not really a business topic but still important."
+          class="card"
+          draggable="true"
+          ondragstart="event.dataTransfer.setData('text/plain',null)"
+        >
+          <h2>From Clone to Code</h2>
+          <p>Rebuild from a shocktrooper's life.</p>
+          <button class="alt">More Info</button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="finished-projects">
+      <header>
+        <h2>Finished Programs</h2>
+      </header>
+      <ul class="dropzone">
+        <li
+          id="p3"
+          data-extra-info="Super important conference! Fictional but still!"
+          class="card"
+          draggable="true"
+          ondragstart="event.dataTransfer.setData('text/plain',null)"
+        >
+          <h2>ReCode the Falcon</h2>
+          <p>
+            Join this program to work on a legend.
+          </p>
+          <button class="alt">More Info</button>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
